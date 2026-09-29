@@ -34,20 +34,23 @@ The system provides different access for Admin, Question Setter and Exam Centre 
 ## User Roles
 
 ### Admin
+
 - View question papers
 - View audit logs
 
 ### Question Setter
+
 - Upload question papers
 - Set release date and time
 
 ### Exam Centre
+
 - Access question paper after release time
 
 ## Project Structure
 
-```text
 secure-exam-paper-management-system/
+
 ├── app.py
 ├── requirements.txt
 ├── README.md
@@ -61,43 +64,43 @@ secure-exam-paper-management-system/
 │   └── logs.html
 └── screenshots/
 
- Installation
+## Installation
 
-Create virtual environment:
+Create a virtual environment:
 
 python -m venv .venv
 
-Activate:
+Activate the environment.
 
 Windows:
 
 .venv\Scripts\activate
 
-Install requirements:
+Install dependencies:
 
 pip install -r requirements.txt
 
-Run:
+Run the application:
 
 python app.py
 
-Open:
+Open in browser:
 
 http://127.0.0.1:5000
 
 ## Demo Accounts
 
-Admin:
+Admin
 
 Username: admin
 Password: admin123
 
-Question Setter:
+Question Setter
 
 Username: setter1
 Password: setter123
 
-Exam Centre:
+Exam Centre
 
 Username: centre1
 Password: centre123
@@ -105,37 +108,42 @@ Password: centre123
 ## Sample Output
 
 Before release time:
+
 Question paper is locked until the configured release time.
+
 After release time:
+
 Question paper can be downloaded successfully.
 
 ## Security Features
 
-Authentication
-Password hashing
-Role-Based Access Control
-Question paper encryption
-SHA-256 integrity verification
-Audit logging
-Controlled release time
-Secure storage
+- Authentication
+- Password hashing
+- Role-Based Access Control
+- Question paper encryption
+- SHA-256 integrity verification
+- Audit logging
+- Controlled release time
+- Secure storage
 
 ## Testing
 
 The following features were tested:
 
-User login
-Question paper upload
-Release time setting
-Access before release time
-Access after release time
-Integrity verification
-Audit logging
+- User login
+- Question paper upload
+- Release time setting
+- Access before release time
+- Access after release time
+- Integrity verification
+- Audit logging
 
 ## GitHub Repository
+
 https://github.com/Pradeepa2401/secure-exam-paper-management-system
 
 ## Security Note
+
 Do not upload passwords, API keys, .env files, encryption keys or database files to a public GitHub repository.
 
 ## Conclusion
