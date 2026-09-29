@@ -64,84 +64,100 @@ secure-exam-paper-management-system/
 │   ├── upload.html
 │   └── logs.html
 └── screenshots/
-Installation
+```
+
+## Installation
 
 Create a virtual environment:
 
+```bash
 python -m venv .venv
+```
 
 Activate the environment:
 
 Windows:
 
+```bash
 .venv\Scripts\activate
+```
 
 Install dependencies:
 
+```bash
 pip install -r requirements.txt
+```
 
 Run the application:
 
+```bash
 python app.py
+```
 
 Open in browser:
 
+```text
 http://127.0.0.1:5000
-Demo Accounts
+```
 
-Admin
+## Demo Accounts
 
-Username: admin
+### Admin
+
+Username: admin  
 Password: admin123
 
-Question Setter
+### Question Setter
 
-Username: setter1
+Username: setter1  
 Password: setter123
 
-Exam Centre
+### Exam Centre
 
-Username: centre1
+Username: centre1  
 Password: centre123
 
-Sample Output
+## Sample Output
 
-Before release time:
+### Before Release Time
 
 Question paper is locked until the configured release time.
 
-After release time:
+### After Release Time
 
 Question paper can be downloaded successfully.
 
-Security Features
-Authentication
-Password hashing
-Role-Based Access Control
-Question paper encryption
-SHA-256 integrity verification
-Audit logging
-Controlled release time
-Secure storage
-Testing
+## Security Features
+
+- Authentication
+- Password hashing
+- Role-Based Access Control
+- Question paper encryption
+- SHA-256 integrity verification
+- Audit logging
+- Controlled release time
+- Secure storage
+
+## Testing
 
 The following features were tested:
 
-User login
-Question paper upload
-Release time setting
-Access before release time
-Access after release time
-Integrity verification
-Audit logging
-GitHub Repository
+- User login
+- Question paper upload
+- Release time setting
+- Access before release time
+- Access after release time
+- Integrity verification
+- Audit logging
+
+## GitHub Repository
 
 https://github.com/Pradeepa2401/secure-exam-paper-management-system
 
-Security Note
+## Security Note
 
 Do not upload passwords, API keys, .env files, encryption keys or database files to a public GitHub repository.
 
-Conclusion
+## Conclusion
 
 This project demonstrates secure and time-controlled management of examination question papers using authentication, encryption, role-based access control, integrity verification and audit logging.
