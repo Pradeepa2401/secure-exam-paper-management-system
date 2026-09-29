@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head><title>Upload Paper</title><link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"></head>
+<body>
+<div class="container small">
+<div class="card">
+<h1>Upload Question Paper</h1>
+<p class="muted">The file will be encrypted before storage.</p>
+<form method="post" enctype="multipart/form-data">
+<label>Exam Name</label><input name="exam_name" placeholder="Government Competitive Exam 2026" required>
+<label>Exam Date</label><input type="date" name="exam_date" required>
+<label>Release Time</label><input type="time" name="release_time" required>
+<label>Question Paper</label><input type="file" name="paper" required>
+<button>Encrypt & Securely Store</button>
+</form>
+<p><a href="{{ url_for('dashboard') }}">← Back to Dashboard</a></p>
+</div>
+</div>
+</body>
+</html>

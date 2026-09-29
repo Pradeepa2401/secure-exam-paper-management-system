@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head><title>Audit Logs</title><link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"></head>
+<body>
+<div class="container">
+<header><h1>Audit Logs</h1><a class="button secondary" href="{{ url_for('dashboard') }}">Dashboard</a></header>
+<div class="card">
+<table>
+<tr><th>User</th><th>Action</th><th>Exam</th><th>Paper ID</th><th>Timestamp</th></tr>
+{% for l in logs %}
+<tr><td>{{ l.username }}</td><td>{{ l.action }}</td><td>{{ l.exam_name or '-' }}</td><td>{{ l.paper_id or '-' }}</td><td>{{ l.timestamp }}</td></tr>
+{% endfor %}
+</table>
+</div>
+</div>
+</body>
+</html>

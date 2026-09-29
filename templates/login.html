@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head><title>Secure Exam Paper System</title><link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"></head>
+<body>
+<div class="container small">
+  <div class="card">
+    <h1>Secure Exam Paper System</h1>
+    <p class="muted">Authorized users only</p>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% for category, message in messages %}<div class="alert {{category}}">{{ message }}</div>{% endfor %}
+    {% endwith %}
+    <form method="post">
+      <label>Username</label><input name="username" required>
+      <label>Password</label><input type="password" name="password" required>
+      <button>Login</button>
+    </form>
+    <div class="demo"><b>Demo:</b> admin/admin123 · setter1/setter123 · centre1/centre123</div>
+  </div>
+</div>
+</body>
+</html>
