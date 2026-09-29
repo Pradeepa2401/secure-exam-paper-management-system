@@ -60,6 +60,7 @@ secure-exam-paper-management-system/
 │   ├── upload.html
 │   └── logs.html
 └── screenshots/
+
 ## Installation
 
 Create virtual environment:
@@ -83,6 +84,7 @@ python app.py
 Open:
 
 http://127.0.0.1:5000
+
 ## Demo Accounts
 
 Admin:
@@ -99,12 +101,16 @@ Exam Centre:
 
 Username: centre1
 Password: centre123
+
 ## Sample Output
+
 Before release time:
 Question paper is locked until the configured release time.
 After release time:
 Question paper can be downloaded successfully.
+
 ## Security Features
+
 Authentication
 Password hashing
 Role-Based Access Control
@@ -113,6 +119,7 @@ SHA-256 integrity verification
 Audit logging
 Controlled release time
 Secure storage
+
 ## Testing
 
 The following features were tested:
@@ -124,10 +131,13 @@ Access before release time
 Access after release time
 Integrity verification
 Audit logging
+
 ## GitHub Repository
 https://github.com/Pradeepa2401/secure-exam-paper-management-system
+
 ## Security Note
 Do not upload passwords, API keys, .env files, encryption keys or database files to a public GitHub repository.
+
 ## Conclusion
 
 This project demonstrates secure and time-controlled management of examination question papers using authentication, encryption, role-based access control, integrity verification and audit logging.
