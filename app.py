@@ -4,6 +4,7 @@ from cryptography.fernet import Fernet
 from supabase import create_client
 from dotenv import load_dotenv
 from datetime import datetime
+from zoneinfo import ZoneInfo
 import hashlib
 import os
 import io
@@ -49,7 +50,7 @@ fernet = Fernet(FERNET_KEY.encode())
 # ============================================================
 
 def current_time():
-    return datetime.now()
+    return datetime.now(ZoneInfo("Asia/Kolkata"))
 
 
 def login_required(role=None):
