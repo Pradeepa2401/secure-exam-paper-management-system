@@ -154,6 +154,12 @@ The following features were tested:
 
 https://github.com/Pradeepa2401/secure-exam-paper-management-system
 
+## Live Demo
+
+The project is deployed on Vercel:
+
+[Open Live Application](https://secure-exam-paper-management-system.vercel.app/)
+
 ## Security Note
 
 Do not upload passwords, API keys, .env files, encryption keys or database files to a public GitHub repository.
