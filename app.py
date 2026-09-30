@@ -14,13 +14,13 @@ SUPABASE_SECRET_KEY = os.environ.get("SUPABASE_SECRET_KEY")
 FERNET_KEY = os.environ.get("FERNET_KEY")
 
 if not SUPABASE_URL:
-    raise RuntimeError("SUPABASE_URL is missing in .env")
+    raise RuntimeError("SUPABASE_URL environment variable is missing")
 
 if not SUPABASE_SECRET_KEY:
-    raise RuntimeError("SUPABASE_SECRET_KEY is missing in .env")
+    raise RuntimeError("SUPABASE_SECRET_KEY environment variable is missing")
 
 if not FERNET_KEY:
-    raise RuntimeError("FERNET_KEY is missing in .env")
+    raise RuntimeError("FERNET_KEY environment variable is missing")
 
 
 # ============================================================
