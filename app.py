@@ -528,12 +528,12 @@ def access_paper(paper_id):
 
     try:
 
-        release_datetime = datetime.strptime(
-            paper["exam_date"]
-            + " "
-            + paper["release_time"],
-            "%Y-%m-%d %H:%M:%S"
-        )
+       release_datetime = datetime.strptime(
+    paper["exam_date"]
+    + " "
+    + paper["release_time"],
+    "%Y-%m-%d %H:%M:%S"
+).replace(tzinfo=ZoneInfo("Asia/Kolkata"))
 
     except ValueError:
 
